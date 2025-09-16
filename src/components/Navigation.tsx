@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
@@ -7,9 +8,9 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <span className="text-2xl font-cosmic font-bold text-cosmic">
+            <Link to="/" className="text-2xl font-cosmic font-bold text-cosmic hover:text-primary transition-colors">
               StyleVerse
-            </span>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -17,9 +18,9 @@ const Navigation = () => {
             <a href="#features" className="text-foreground hover:text-primary transition-colors font-cyber">
               Features
             </a>
-            <a href="#ar-fitting" className="text-foreground hover:text-primary transition-colors font-cyber">
+            <Link to="/ar-fitting" className="text-foreground hover:text-primary transition-colors font-cyber">
               AR Fitting
-            </a>
+            </Link>
             <a href="#marketplace" className="text-foreground hover:text-primary transition-colors font-cyber">
               Marketplace
             </a>

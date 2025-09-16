@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroPortal from "@/assets/metaverse-store.jpg";
 
 const Hero = () => {
@@ -55,10 +56,12 @@ const Hero = () => {
             <div className="absolute inset-0 rounded-lg bg-gradient-portal opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
           </Button>
           
-          <Button variant="cosmic" size="lg" className="group">
-            <span className="mr-2">✨</span>
-            Explore AR Fitting
-          </Button>
+          <Link to="/ar-fitting">
+            <Button variant="cosmic" size="lg" className="group">
+              <span className="mr-2">✨</span>
+              Explore AR Fitting
+            </Button>
+          </Link>
         </div>
 
         {/* Stats */}
