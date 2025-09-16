@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroPortal from "@/assets/hero-portal.jpg";
+import heroPortal from "@/assets/metaverse-store.jpg";
 
 const Hero = () => {
   return (

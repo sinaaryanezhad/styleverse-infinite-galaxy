@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import arFittingRoom from "@/assets/ar-fitting-room.jpg";
-import fashionShow from "@/assets/fashion-show.jpg";
+import arFittingRoom from "@/assets/clothing-store-mannequins.jpg";
+import fashionShow from "@/assets/neon-dress.jpg";
 
 const Features = () => {
   const features = [
