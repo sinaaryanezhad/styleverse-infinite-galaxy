@@ -15,11 +15,17 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Cosmic Variants for StyleVerse
+        portal: "bg-gradient-portal text-white font-cosmic font-bold shadow-neon-pink hover:shadow-neon-turquoise transition-all duration-300 hover:scale-105 relative overflow-hidden",
+        cosmic: "glass border border-primary/30 text-primary font-cosmic hover:border-primary/60 hover:text-primary-glow shadow-glass hover:shadow-neon-pink transition-all duration-300",
+        neon: "bg-transparent border-2 border-primary text-primary font-cyber hover:bg-primary hover:text-primary-foreground shadow-neon-pink hover:shadow-neon-turquoise transition-all duration-300",
+        hologram: "glass border border-secondary/30 text-secondary font-cosmic hover:border-secondary/60 hover:text-secondary-glow shadow-neon-turquoise transition-all duration-300"
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
+        lg: "h-12 rounded-md px-8 text-base font-semibold",
+        xl: "h-14 rounded-lg px-10 text-lg font-bold",
         icon: "h-10 w-10",
       },
     },
