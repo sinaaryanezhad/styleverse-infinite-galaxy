@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import CTA from "@/components/CTA";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -27,9 +28,9 @@ const Index = () => {
             <div>
               <h4 className="font-cyber font-semibold text-foreground mb-3">Platform</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li><a href="#" className="hover:text-primary transition-colors">AR Fitting</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Design Studio</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Fashion Shows</a></li>
+                <li><Link to="/ar-fitting" className="hover:text-primary transition-colors">AR Fitting</Link></li>
+                <li><Link to="/nft-studio" className="hover:text-primary transition-colors">Design Studio</Link></li>
+                <li><a href="#features" className="hover:text-primary transition-colors">Fashion Shows</a></li>
               </ul>
             </div>
             

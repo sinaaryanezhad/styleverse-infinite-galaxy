@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import arFittingRoom from "@/assets/clothing-store-mannequins.jpg";
-import fashionShow from "@/assets/neon-dress.jpg";
+import fashionShow from "@/assets/metaverse-fashion-show.jpg";
 
 const Features = () => {
   const features = [
@@ -45,7 +46,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-24 px-4 relative">
+    <section id="features" className="py-24 px-4 relative">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-cosmic font-bold mb-6">
@@ -77,11 +78,14 @@ const Features = () => {
               <CardContent>
                 {feature.image && (
                   <div className="mb-4 rounded-lg overflow-hidden">
-                    <img 
-                      src={feature.image} 
-                      alt={feature.title}
-                      className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                    />
+                    <AspectRatio ratio={feature.title === "Virtual Fashion Shows" ? 2/3 : 16/9}>
+                      <img 
+                        src={feature.image} 
+                        alt={`${feature.title} showcase image`}
+                        loading="lazy"
+                        className="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-300"
+                      />
+                    </AspectRatio>
                   </div>
                 )}
                 <CardDescription className="text-muted-foreground leading-relaxed">
