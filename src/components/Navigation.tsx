@@ -18,9 +18,12 @@ const Navigation = () => {
             <a href="#features" className="text-foreground hover:text-primary transition-colors font-cyber">
               Features
             </a>
-            <Link to="/ar-fitting" className="text-foreground hover:text-primary transition-colors font-cyber">
-              AR Fitting
-            </Link>
+        <Link to="/ar-fitting" className="text-foreground hover:text-primary transition-colors font-cyber">
+          AR Fitting
+        </Link>
+        <Link to="/nft-studio" className="text-foreground hover:text-primary transition-colors font-cyber">
+          NFT Studio
+        </Link>
             <a href="#marketplace" className="text-foreground hover:text-primary transition-colors font-cyber">
               Marketplace
             </a>
